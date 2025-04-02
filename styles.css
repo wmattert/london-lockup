@@ -512,6 +512,15 @@ ul {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.footer-section a {
+  color: #f0f0f0; /* Light color for better visibility */
+  text-decoration: underline;
+}
+
+.footer-section a:hover {
+  color: #ffffff; /* Brighter white on hover */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .nav {
