@@ -94,7 +94,7 @@
                     
                     <div class="contact-form-container">
                         <h2>Send Us a Message</h2>
-                        <form class="contact-form" id="contactForm">
+                        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mldjpdeq" method="POST">
                             <div class="form-group">
                                 <label for="name" class="form-label">Name</label>
                                 <input 
@@ -222,15 +222,16 @@
                 });
             }
             
-            // Form submission handler
+            // Form submission is now handled by Formspree
             const contactForm = document.getElementById('contactForm');
             if (contactForm) {
+                // We can still add a confirmation message before submission
                 contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    alert('Thank you for your message! We will get back to you soon.');
-                    contactForm.reset();
+                    // Form will submit normally to Formspree
+                    // No need to prevent default or reset the form
                 });
             }
+
         });
     </script>
 </body>
